@@ -52,8 +52,6 @@ class Comment(Base):
     user_id = Column(Integer, ForeignKey('user.id')) 
     post_id = Column(Integer, ForeignKey('post.id')) 
 
-
-
 ## Draw from SQLAlchemy base
 try:
     result = render_er(Base, 'diagram.png')
